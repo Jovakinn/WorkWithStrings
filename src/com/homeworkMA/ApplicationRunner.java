@@ -1,7 +1,6 @@
 package com.homeworkMA;
 
 import java.util.Scanner;
-
 import static com.homeworkMA.service.LogicString.reverseString;
 
 public class ApplicationRunner {
