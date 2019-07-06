@@ -1,7 +1,5 @@
 package com.homeworkMA.service;
 
-import com.homeworkMA.ApplicationRunner;
-
 public class LogicString {
     public static void reverseString(String result){
 
