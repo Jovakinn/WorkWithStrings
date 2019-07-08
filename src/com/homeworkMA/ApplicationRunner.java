@@ -1,7 +1,8 @@
 package com.homeworkMA;
 
+import com.homeworkMA.service.LogicString;
+
 import java.util.Scanner;
-import static com.homeworkMA.service.LogicString.reverseString;
 
 public class ApplicationRunner {
     public static void main(String[] args) {
@@ -9,7 +10,9 @@ public class ApplicationRunner {
         System.out.println("Enter your string: ");
         Scanner scanner = new Scanner(System.in);
 
+        LogicString logicString = new LogicString();
+        String s = scanner.nextLine();
         // calling reverse method
-        reverseString(scanner.nextLine());
+        logicString.isNumeric(s);
     }
 }

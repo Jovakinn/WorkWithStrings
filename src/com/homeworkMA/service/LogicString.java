@@ -1,13 +1,20 @@
 package com.homeworkMA.service;
 
+import java.util.ArrayList;
+
 public class LogicString {
-    public static void reverseString(String result){
+        public static void isNumeric(String  s) {
+            StringBuilder sb = new StringBuilder(s);
+            String reverseStr;
 
-        // reverse string
-        StringBuilder stringBuilder = new StringBuilder(result);
-        String reverseStr = stringBuilder.reverse().toString();
-
-        System.out.println("Your revers string: " + reverseStr);
-
-    }
+            for (char c : s.toCharArray()) {
+                if (!Character.isDigit(c)){
+                    System.out.println(c);
+                }
+                else {
+                    reverseStr = sb.reverse().toString();
+                    System.out.println(reverseStr);
+                }
+            }
+        }
 }
