@@ -1,18 +1,24 @@
 package com.homeworkMA;
 
 import com.homeworkMA.service.LogicString;
-
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class ApplicationRunner {
-    public static void main(String[] args) {
-        // scanner
-        System.out.println("Enter your string: ");
-        Scanner scanner = new Scanner(System.in);
 
+    private static Logger logger = Logger.getLogger(ApplicationRunner.class.getName());
+
+    public static void main(String[] args) {
+
+        logger.info("Enter your string: ");
+
+        // scanner
+        Scanner scanner = new Scanner(System.in);
         LogicString logicString = new LogicString();
-        String s = scanner.nextLine();
+
+        String string = scanner.nextLine();
         // calling reverse method
-        logicString.isNumeric(s);
+
+        logicString.isNumeric(string);
     }
 }
